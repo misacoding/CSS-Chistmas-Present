@@ -6,7 +6,7 @@ body {
 .present {
     width: 410px;
     margin: 0 auto;
-    padding-top: 190px;
+    padding-top: 125px;
 }
 
 .box, .lid {
@@ -182,12 +182,12 @@ body {
     transform: translate(20px, -130px) rotate(-38deg) ;
 }
 
-
 body {
-    margin: 0;
-    padding: 0;
-    background: #000;
-    overflow: hidden; } 
+    height: 100vh;
+    background: radial-gradient(ellipse at bottom, #1b2735 0%, #090a0f 100%);
+    overflow: hidden;
+    filter: drop-shadow(0 0 10px rgb(255, 255, 255));
+}  
   
  .pyro > .before, .pyro > .after {
     position: absolute;
