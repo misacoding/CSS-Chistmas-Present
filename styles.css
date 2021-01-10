@@ -6,7 +6,7 @@ body {
 .present {
     width: 410px;
     margin: 0 auto;
-    padding-top: 125px;
+    padding-top: 55px;
 }
 
 .box, .lid {
@@ -187,8 +187,77 @@ body {
     background: radial-gradient(ellipse at bottom, #1b2735 0%, #090a0f 100%);
     overflow: hidden;
     filter: drop-shadow(0 0 10px rgb(255, 255, 255));
-}  
-  
+}
+
+.neon {
+  position: relative;
+  overflow: hidden;
+  filter: brightness(200%);
+  width: 398;
+  margin: 0 auto; 
+  top: 50px
+}
+
+.text {
+  background-color: black;
+  color: white;
+  font-size: 180px;
+  font-weight: bold;
+  font-family: sans-serif;
+  text-transform: uppercase;
+  position: relative;
+  user-select: none;
+  top:0px;
+}
+
+.text::before {
+  content: attr(data-text);
+  position: absolute;
+  color: white;
+  filter: blur(0.02em);
+  mix-blend-mode: difference;
+  margin-top: -2px;
+}
+
+.gradient {
+  position: absolute;
+  background: linear-gradient(45deg, red, gold, lightgreen, gold, red);
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  mix-blend-mode: multiply;
+}
+
+.spotlight {
+  position: absolute;
+  top: -100%;
+  left: -100%;
+  right: 0;
+  bottom: 0;
+  background: 
+      radial-gradient(
+          circle,
+          white,
+          transparent 25%
+      ) center / 25% 25%,
+      radial-gradient(
+          circle,
+          white,
+          black 25%
+      ) center / 12.5% 12.5%;
+  animation: light 5s linear infinite;
+  mix-blend-mode: color-dodge;
+  margin-top: 100px;
+}
+
+@keyframes light {
+  to {
+      transform: translate(50%, 50%);
+  }
+}
+
+
  .pyro > .before, .pyro > .after {
     position: absolute;
     width: 5px;
