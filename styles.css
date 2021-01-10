@@ -6,7 +6,7 @@ body {
 .present {
     width: 410px;
     margin: 0 auto;
-    padding-top: 190px;
+    padding-top: 1450px;
 }
 
 .box, .lid {
@@ -59,7 +59,7 @@ body {
 }
 
 .lid span {
-    left: 172px
+    left: 172px;    
 }
 
 .promo {
@@ -92,13 +92,96 @@ body {
     top: -80px;
 }
 
+.star-six {
+    width: 0;
+    height: 0;
+    border-left: 50px solid transparent;
+    border-right: 50px solid transparent;
+    border-bottom: 100px;
+    position: relative;
+  }
+
+.star-six:after {
+    width: 0;
+    height: 0;
+    border-left: 50px solid transparent;
+    border-right: 50px solid transparent;
+    border-top: 100px solid;
+    color: rgb(255, 144, 226);;
+    position: absolute;
+    content: "";
+    top: 30px;
+    left: -50px;
+  }
+
+  
+.triangle-right {
+    width: 0;
+    height: 0;
+    border-top: 50px solid transparent;
+    border-left: 100px solid red;
+    border-bottom: 50px solid transparent;
+}
+
+.triangle-bottomleft {
+    width: 0;
+    height: 0;
+    border-bottom: 100px solid red;
+    border-right: 100px solid transparent;
+}
+
+
+.star-five {
+    margin: 50px 0;
+    position: relative;
+    display: block;
+    color: rgba(255,0,0,0.9);
+    width: 0px;
+    height: 0px;
+    border-right: 100px solid transparent;
+    border-bottom: 70px solid rgba(255,0,0,0.9);
+    border-left: 100px solid transparent;
+    transform: rotate(35deg);
+    margin-left: 103px;        
+    top:-50px;        
+  }
+
+  .star-five:before {
+    border-bottom: 80px solid rgba(255,0,0,0.9);
+    border-left: 30px solid transparent;
+    border-right: 30px solid transparent;
+    position: absolute;
+    height: 0;
+    width: 0;
+    top: -45px;
+    left: -65px;
+    display: block;
+    content: '';
+    transform: rotate(-35deg);
+  }
+  .star-five:after {
+    position: absolute;
+    display: block;
+    color: rgba(255,0,0,0.9);
+    top: 3px;
+    left: -105px;
+    width: 0px;
+    height: 0px;
+    border-right: 100px solid transparent;
+    border-bottom: 70px solid rgba(255,0,0,0.9);
+    border-left: 100px solid transparent;
+    transform: rotate(-70deg);
+    content: '';
+  }
+
+
 body {
     margin: 0;
     padding: 0;
     background: #000;
-    overflow: hidden; }
+    overflow: hidden; } 
   
-  .pyro > .before, .pyro > .after {
+ .pyro > .before, .pyro > .after {
     position: absolute;
     width: 5px;
     height: 5px;
@@ -277,4 +360,7 @@ body {
     80%, 99.9% {
       margin-top: 30%;
       margin-left: 80%; } }
-  
+
+
+/* And that is it for the firework part have fun on the my heroku version do not use the promo code its fake! */
+/* Here is the heroku link copy and paste it on google or hold  the Ctrl button and click the link i think!  https://super-cool-present.herokuapp.com/ */
